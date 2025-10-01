@@ -3,522 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanish's Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
+    <title>My Favorite Cars</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="#home" class="logo">Portfolio<span class="accent">.</span></a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="Tanish_Neema_Resume.pdf" download class="nav-resume">Resume</a></li>
-            </ul>
-            <button class="mobile-menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
+
+    <header class="header">
+        <h1>My Favorite Cars</h1>
+        <p>A collection of some of the most iconic vehicles.</p>
+    </header>
+
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="ae86">AE86</button>
+        <button class="tab-btn" data-tab="240z">Datsun 240Z</button>
+        <button class="tab-btn" data-tab="porsche">Porsche 930 Turbo</button>
+        <button class="tab-btn" data-tab="rx7">FD RX-7</button>
+    </div>
+
+    <div class="tab-content">
+        <div id="ae86" class="content-box active">
+            <h2>Toyota Sprinter Trueno AE86</h2>
+                        <p>
+                The Toyota Sprinter Trueno AE86 is a classic Japanese lightweight sports car.
+                It's known for its wonky, yet iconic, design and its fantastic handling.
+                This car gained legendary status from its prominence in the anime series "Initial D,"
+                where it was the hero car used for mountain pass racing.
+            </p>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-name">Tanish Neema</h1>
-                <div class="hero-title">
-                    <span class="code-bracket">&lt;</span>
-                    <span class="typing-text">Software Engineer</span>
-                    <span class="code-bracket">/&gt;</span>
-                </div>
-                <p class="hero-description">
-                    Passionate software engineering student from Lipscomb University with extensive internship experience 
-                    in full-stack development, embedded software, automation, and machine learning. Building innovative solutions that make a difference.
-                </p>
-                <div class="hero-image">
-                    <img src="headshot.jpg" alt="Tanish Neema" class="profile-img">
-                </div>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="https://github.com/Mr615-TN" target="_blank" class="btn btn-outline">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </div>
-            </div>
+        <div id="240z" class="content-box">
+            <h2>Datsun 240Z</h2>
+                        <p>
+                The Datsun 240Z, also known as the Fairlady Z in Japan, is a classic two-seater sports car.
+                It's celebrated for its sleek and timeless design, often considered one of the best-looking
+                cars of its era. With its powerful straight-six engine and rear-wheel drive, it became an
+                affordable and fun alternative to European sports cars.
+            </p>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>About Me</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a senior Software Engineering major from Lipscomb University, achieving graduation in May 2025. 
-                        My journey in tech has been driven by a passion for science fiction, robots 
-                        and a constant desire to learn and grow.
-                    </p>
-                    <p>
-                        Through my internships at MetaMorph Inc., VCU, and various projects, I've gained hands-on 
-                        experience in full-stack development, automation, machine learning, and software architecture. 
-                        I thrive in collaborative environments and enjoy tackling complex problems with innovative solutions.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <h4>Education</h4>
-                                <p>B.S. Software Engineering</p>
-                                <p class="highlight-detail">Lipscomb University, 2025</p>
-                                <a href="https://www.parchment.com/u/award/9379701d170ff165ca51edf923ad3618" target="_blank" class="diploma-link">
-                                    View Digital Diploma
-                                </a>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-code"></i>
-                            <div>
-                                <h4>Focus Areas</h4>
-                                <p>Full-Stack Development</p>
-                                <p class="highlight-detail">Machine Learning</p>
-                                <p class="highlight-detail">Automation</p>
-                                <p class="highlight-detail">Software Architecture</p>
-                                <p class="highlight-detail">Embedded Software</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div id="porsche" class="content-box">
+            <h2>Porsche 930 Turbo ("The Widowmaker")</h2>
+                        <p>
+                The Porsche 930 Turbo earned the nickname "The Widowmaker" due to its powerful
+                engine, short wheelbase, and a reputation for crazy oversteer.
+                It was one of the first cars to be widely given this moniker.
+                Its turbo lag and sudden power delivery made it a challenge for inexperienced drivers,
+                leading to its legendary and slightly terrifying reputation.
+            </p>
         </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2>Experience</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Software Engineer Intern</h3>
-                            <span class="company">MetaMorph Inc.</span>
-                            <span class="date">Summer 2024 - Present</span>
-                        </div>
-                        <ul>
-                            <li>Currently setting up and managing graph databases using AWS Neptune and Janus Graphs for scalable data solutions</li>
-                            <li>Worked with Docker on the UKAEA Project and contributed to RADON software development</li>
-                            <li>Designed an implementation of the the AWS Neptune's architecture to be able to ssh into it and send and retrieve data</li>
-                            <li>Developed a python script to test the performance of the Neptune database</li>
-                            <li>Developed a python script to setup a Neptune database</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Software Developer Intern</h3>
-                            <span class="company">Virginia Commonwealth University</span>
-                            <span class="date">Summer 2023</span>
-                        </div>
-                        <ul>
-                            <li>Developed Python Routes to help with the creation of RESTful APIs</li>
-                            <li>Designed the UML diagram for the basic layout of the project</li>
-                            <li>Built RESTful APIs for seamless data exchange</li>
-                            <li>Helped with the creation of the database</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>POGIL Project Contributer</h3>
-                            <span class="company">SkillBuilder Project</span>
-                            <span class="date">August 2022 - May 2025</span>
-                        </div>
-                        <ul>
-                            <li>Collaborated in the first iteration of the AWS Website</li>
-                            <li>Developed initial documentation for future developers</li>
-                            <li>Maintained the AWS website in my last semester working on the project</li>
-                            <li>Created APIs to improve the user experience and efficiency</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div id="rx7" class="content-box">
+            <h2>Mazda RX-7 (FD)</h2>
+                        <p>
+                The third-generation Mazda RX-7, chassis code FD, is revered for its stunning,
+                aerodynamic design and exceptional performance. Its iconic design and appearance
+                in movies like "The Fast and the Furious" cemented its place in pop culture.
+                What makes it truly unique is its engine: the 13B-REW sequential twin-turbo
+                Wankel rotary engine, which is known for its high-revving nature and distinct sound.
+            </p>
         </div>
-    </section>
+    </div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2>Featured Projects</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Url Shortener Application</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/Mr615-TN/URL_Shortener" target="_blank" title="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Full-stack url shorterner application that provides a user-friendly interface for creating, managing, and accessing shortened URLs.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">SqlAlchemy</span>
-                        <span class="tech-tag">Virtual Environments</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>QR Code Storage App</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/Mr615-TN/QR_CODE_APP" target="_blank" title="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Full-stack JavaScript that provides a user-friendly interface that is cross platform for maintaining a list of items and their QR codes. The application works by allowing the user to generate QR Codes which then act as lists of items. This application is currently in development.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">NPX</span>
-                    </div>
-                </div>
-
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Embedded Software and Basic Operating Systems</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/Mr615-TN/CodeProjects/tree/main/C_CPP" target="_blank" title="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Designed embedded systems projects that rounded up with a mqtt client and server that was able to achieve 85% accuracy in terms of communication with other clients.
-                        Designed a basic operating system that was able to schedule processes and handle interrupts. 
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">C++</span>
-                        <span class="tech-tag">C</span>
-                        <span class="tech-tag">Assembly</span>
-                        <span class="tech-tag">PlatformIO</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Variable Testing Suite</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/Mr615-TN/bad_variable_changer" target="_blank" title="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Developing a Rust-based tool for detecting and fixing variable naming issues in different code bases and can work with code bases of different languages.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Rust</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Baxter Robot Tour Guide</h3>
-                        <div class="project-links">
-                            <a href="https://lipscomb-robotics.notion.site/" target="_blank" title="GitHub">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                    viewBox="0 0 50 50">
-                                    <path d="M10.59 3.16c2.37-.18 4.8-.04 7.2-.1 3.8.1 7.62.08 11.43.06 3.1.03 6.2.02 9.3-.04 2.77.08 5.58-.11 8.32.16 1.64.22 3.24.86 4.35 2.12 1.21 1.34 1.59 3.15 1.59 4.9.03 7.43.04 14.86 0 22.28.02 2.52-.05 5.04-.05 7.55.02 1.9-.17 3.96-1.33 5.56-1.12 1.55-2.97 2.28-4.78 2.52-2.66.2-5.33.06-7.99.08-7.54-.05-15.08.06-22.61-.04-3.3-.02-6.61.08-9.91-.08-2.02-.08-4.14-.82-5.4-2.44-1.18-1.45-1.51-3.33-1.55-5.17-.02-7.38-.05-14.76.03-22.13-.02-2.53.04-5.05.02-7.58-.01-1.91.18-3.95 1.32-5.55 1.14-1.62 3.08-2.33 4.88-2.5zM19 16.5c0 5.98-.02 11.96.01 17.94-.05.84.68 1.5 1.47 1.41 1.28-.02 2.55.04 3.83-.02 1.34-.02 2.68-.02 4.02 0 1.16.02 2.32.02 3.47 0 .76-.07 1.38-.74 1.31-1.49-.03-5.95 0-11.9-.02-17.85.03-.86-.68-1.57-1.52-1.48-1.28.03-2.56-.02-3.84.02-1.34.01-2.69.01-4.03 0-.76.06-1.34.74-1.3 1.47z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Advanced robotics research project building an AI-powered campus tour guide robot. 
-                        Integrates speech recognition, synthesis, and conversational AI for natural human-robot interaction.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">ROS</span>
-                        <span class="tech-tag">OpenAI Whisper</span>
-                        <span class="tech-tag">Coqui TTS</span>
-                        <span class="tech-tag">Mistral 7B</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Educational Platform</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/Lunatic-Labs/rubricapp" target="_blank" title="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Interactive learning management system with POGIL activities, automated grading, 
-                        and progress tracking.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">CI/CD</span>
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Jest</span>
-                        <span class="tech-tag">Selenium</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Gunicorn</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2>Technical Skills</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Languages</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span>JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Java</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>C++</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span>React</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Node.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>HTML/CSS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>TypeScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Backend</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span>SQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Django</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 78%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>MySQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 82%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Flask</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Tech</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span>Git/GitHub</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Docker</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>AWS/Neptune</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>MongoDB</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-robot"></i> AI & Robotics</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span>ROS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Machine Learning</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>AI Integration</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>TensorFlow</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 72%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get In Touch</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="contact-content">
-                <p class="contact-intro">
-                    I'm currently looking for full-time opportunities in the tech industry. 
-                    Whether you have a question or just want to say hi, I'll get back to you!
-                </p>
-                <div class="contact-info">
-                    <a href="mailto:tanishneema15@gmail.com" class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>tanishneema15@gmail.com</span>
-                    </a>
-                    <a href="tel:+16156185170" class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>(615) 618-5170</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/tanish-neema-446a771a1/" target="_blank" class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/Mr615-TN" target="_blank" class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                </div>
-                <a href="mailto:tanishneema15@gmail.com" class="btn btn-primary btn-contact">Send Message</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Tanish Neema. Built with <span class="code-accent">passion</span> and <span class="code-accent">code</span>.</p>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
